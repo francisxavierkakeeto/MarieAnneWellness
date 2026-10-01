@@ -1,0 +1,32 @@
+body{
+            background-color: #000051;
+           /* background-image: url("./Images/Backgroud1.png");  */
+            background-size: cover;
+            background-position: fullscreen;
+        }
+        h1,h2,nav,p,div,footer{
+            text-decoration-color: hsla(298, 87%, 18%, 0.199);
+            color: #faf4e4;
+            font-family:"MonaLisa Solid ITC TT";
+        }
+        img{
+            float: left;
+        }
+        button{
+            background-color: #c7d1dd;
+            color: #0038bd;
+            font-family:"MonaLisa Solid ITC TT";
+            border-radius: 10px;
+        }
+        a:hover{
+            background-color: #c7d1dd;
+            color: #e01a4e;
+            font-family:"MonaLisa Solid ITC TT";
+            border-radius: 10px;
+        }
+        a:link{
+           background-color: #c7d1dd;
+            color: #0038bd;
+            font-family:"MonaLisa Solid ITC TT";
+            border-radius: 10px;
+        }
