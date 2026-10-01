@@ -1,0 +1,7 @@
+{
+  "editor.formatOnPaste": true,
+  "prettier.enable": true,
+  "prettier.enableDebugLogs": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true
+}
