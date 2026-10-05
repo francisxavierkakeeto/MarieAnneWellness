@@ -7,11 +7,10 @@ body {
 h1,
 h2,
 nav,
-p,
-footer {
+p {
   color: #faf4e4;
   font-family: "MonaLisa Solid ITC TT";
-  padding: 10px;
+  padding: 0%;
 }
 img {
   float: center;
@@ -23,37 +22,42 @@ button {
   background-color: #c7d1dd;
   color: #0038bd;
   font-family: "MonaLisa Solid ITC TT";
+  font-size: 15pt;
   border-radius: 10px;
-  padding: 10px;
+  padding: 2px;
 }
 button:hover {
   background-color: #e01a4e;
   color: #0038bd;
-  padding: 10px;
-}
-a:hover {
-  background-color: #e01a4e;
-  color: #0038bd;
-  font-family: "MonaLisa Solid ITC TT";
-  border-radius: 10px;
-  padding: 10px;
+  padding: 6px;
 }
 a:link {
-  background-color: #c7d1dd;
   color: #0038bd;
   font-family: "MonaLisa Solid ITC TT";
+  text-underline-offset: 0.2em;
+  font-size: 15pt;
   border-radius: 10px;
-  padding: 10px;
+  padding: 1px;
 }
-.benefits {
-  box-align: right;
-  /*background-color: #e01a4e;*/
+ul {
+  float: right;
+  list-style-type: none;
+  text-align: center;
+  color: #c7d1dd;
+  background-color: #e01a4e;
   border-color: #c7d1dd;
-  border-radius: 15px;
-  border: 0;
-  background-position: auto;
-  padding: 10px;
+  border-radius: 5px;
+  width: 150px;
+  /*height: 100px;*/
+  padding: 5px;
 }
-.brand {
-  padding: 10px;
+ul:hover {
+  border: #faf4e4;
+}
+footer {
+  color: #0038bd;
+  font-family: "MonaLisa Solid ITC TT";
+  background-color: aqua;
+  border-radius: 15px;
+  width: 550px;
 }
