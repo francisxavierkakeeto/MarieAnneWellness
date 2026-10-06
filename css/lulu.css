@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 body {
@@ -15,20 +13,38 @@ nav,
 p {
   color: #faf4e4;
   font-family: "MonaLisa Solid ITC TT";
-  padding: 0%;
+}
+h1.c1 {
+  margin-top: 40px;
+  margin-left: 250px;
+}
+h1.c2 {
+  margin-top: 40px;
+  margin-right: 250px;
+}
+h1.c3 {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+nav {
+  background-color: #e01a4e;
+  border-radius: 15px;
+  width: 1050px;
+  padding: 5px;
+  margin-left: 15px;
 }
 img {
-  float: center;
-  width: 200px;
-  height: 175px;
-  padding: 0;
+  width: 300px;
+  height: 275px;
+  margin-bottom: 0px;
 }
 button {
   background-color: #c7d1dd;
   color: #0038bd;
   font-family: "MonaLisa Solid ITC TT";
   font-size: 15pt;
-  border-radius: 10px;
+  border: 2px solid #0038bd;
+  border-radius: 25px;
   padding: 2px;
 }
 button:hover {
@@ -39,12 +55,11 @@ button:hover {
 a:link {
   color: #0038bd;
   font-family: "MonaLisa Solid ITC TT";
-  text-underline-offset: 0em;
   font-size: 15pt;
   border-radius: 10px;
   padding: 1px;
 }
-ul {
+ul.c4 {
   float: right;
   list-style-type: none;
   text-align: center;
@@ -53,8 +68,30 @@ ul {
   border-color: #c7d1dd;
   border-radius: 5px;
   width: 150px;
-  /*height: 100px;*/
-  padding: 5px;
+  border: 2px solid #0038bd;
+  margin-bottom: 150px;
+}
+table {
+  border-radius: 15px;
+  width: 650px;
+  margin-left: 200px;
+  td {
+    border: 2px solid #0038bd;
+    text-align: center;
+    padding: 10px;
+  }
+}
+ul.c5 {
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  color: #c7d1dd;
+  background-color: #e01a4e;
+  border-color: #c7d1dd;
+  border-radius: 5px;
+  width: 150px;
+  border: 2px solid #0038bd;
+  margin-bottom: 150px;
 }
 ul:hover {
   border: #faf4e4;
@@ -64,5 +101,7 @@ footer {
   font-family: "MonaLisa Solid ITC TT";
   background-color: aqua;
   border-radius: 15px;
-  width: 550px;
+  width: 750px;
+  padding: 10px;
+  margin-top: 150px;
 }
