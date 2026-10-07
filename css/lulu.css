@@ -89,12 +89,7 @@ table {
   border-radius: 15px;
   width: 650px;
   margin-left: 225px;
-  margin-top: 150px;
-  td {
-    border: 2px solid #0038bd;
-    text-align: center;
-    padding: 10px;
-  }
+  margin-right: 250px;
 }
 footer {
   color: #0038bd;
@@ -103,5 +98,5 @@ footer {
   border-radius: 15px;
   width: 750px;
   padding: 10px;
-  margin-top: 5px;
+  margin-top: 125px;
 }
