@@ -1,155 +1,333 @@
+:root {
+  --primary-blue: #1b4965;
+  --light-blue: #62b6cb;
+  --accent-sky: #cae9ff;
+  --dark-neutral: #1d3557;
+  --light-bg: #f0f7f9;
+  --white: #ffffff;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Cambria", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
-  background-color: #000051;
+  color: var(--dark-neutral);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+/* Header & Logo */
+.site-header {
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(27, 73, 101, 0.08);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-monogram {
+  width: 120px;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-blue);
   background-size: cover;
-  background-position: fullscreen;
-}
-h1,
-h2,
-nav,
-p {
-  color: #faf4e4;
-  font-family: "MonaLisa Solid ITC TT";
-}
-h1.c1 {
-  margin-top: 40px;
-  margin-left: 250px;
-}
-h1.c2 {
-  margin-top: 40px;
-  margin-right: 250px;
-}
-h1.c3 {
-  margin-left: 50px;
-  margin-bottom: 30px;
-}
-nav {
-  background-color: #e01a4e;
-  border-radius: 15px;
-  width: 1050px;
-  padding: 5px;
-  margin-left: 15px;
-}
-img {
-  width: 300px;
-  height: 275px;
-  margin-bottom: 0px;
-}
-button {
-  background-color: #c7d1dd;
-  color: #0038bd;
-  font-family: "MonaLisa Solid ITC TT";
-  font-size: 15pt;
-  border: 2px solid #d4af37;
   border-radius: 25px;
-  padding: 2px;
 }
-button:hover {
-  background-color: #e01a4e;
-  color: #0038bd;
-  padding: 6px;
-}
-a:link {
-  color: #0038bd;
-  font-family: "MonaLisa Solid ITC TT";
-  font-size: 15pt;
-  border-radius: 10px;
-  padding: 1px;
-}
-p {
-  text-align: center;
-  font-size: 12pt;
-  margin-top: 15px;
-  margin-left: 55px;
-  margin-right: 15px;
-}
-p.parker {
-  background-image: image(url("./Images/Aromatherapy.avif"));
-}
-.wellness-grid {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-.wellness-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  border: 2px solid #d4af37;
-  background-color: #000051;
-  width: 300px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-.wellness-card img {
+
+.logo-monogram img {
   width: 100%;
   height: 100%;
-  transition: transform 0.4s ease;
+  display: block;
 }
-.wellness-card:hover img {
-  transform: scale(1.1);
+
+.logo-text h1 {
+  font-size: 1.25rem;
+  color: var(--primary-blue);
 }
-img.peter {
-  width: 300px;
-  height: 275px;
-  margin-bottom: 0px;
+
+.logo-text p {
+  font-size: 0.85rem;
+  color: #555;
 }
-img.parker {
-  float: right;
-  width: 300px;
-  height: 275px;
-  margin-bottom: 0px;
+
+.search-bar {
+  display: flex;
+  gap: 5px;
 }
-img.mj {
-  width: 300px;
-  height: 275px;
-  margin-bottom: 0px;
+
+.search-bar input {
+  padding: 6px 12px;
+  border: 1px solid #b8d0e0;
+  border-radius: 4px;
 }
-img.nate {
-  float: right;
-  width: 300px;
-  height: 275px;
-  margin-bottom: 0px;
+
+.search-bar button {
+  padding: 6px 12px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-ul.c4 {
-  float: right;
-  list-style-type: none;
+
+/* Navigation */
+.main-nav {
+  background-color: var(--primary-blue);
+}
+
+.main-nav ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+}
+
+.main-nav li a {
+  display: block;
+  padding: 12px 20px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a.active {
+  background-color: var(--light-blue);
+}
+
+/* Hero Section */
+.hero {
+  background:
+    linear-gradient(rgba(27, 73, 101, 0.88), rgba(27, 73, 101, 0.88)),
+    center/cover;
+  color: var(--white);
   text-align: center;
-  color: #c7d1dd;
-  background-color: #e01a4e;
-  border-color: #c7d1dd;
-  border-radius: 5px;
-  width: 150px;
-  border: 2px solid #0038bd;
-  margin-bottom: 175px;
+  padding: 60px 20px;
 }
-ul.c5 {
-  float: left;
-  list-style-type: none;
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #4fa3b8;
+}
+
+/* Hero Slider Container */
+.hero-slider {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  max-width: 700px; /* Adjust width to fit your layout nicely */
+  height: 380px; /* Set a fixed, uniform height for the banner */
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(27, 73, 101, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Slider wrapper */
+.slider-placeholder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Individual Slide Styling */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fadeAnimation 28s infinite; /* 7 images * 4s each = 28s total loop */
+}
+
+/* Image scaling and fit */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images fill the box nicely without stretching */
+  display: block;
+}
+
+/* Staggering the animation timing for each slide */
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.slide:nth-child(2) {
+  animation-delay: 4s;
+}
+.slide:nth-child(3) {
+  animation-delay: 8s;
+}
+.slide:nth-child(4) {
+  animation-delay: 12s;
+}
+.slide:nth-child(5) {
+  animation-delay: 16s;
+}
+.slide:nth-child(6) {
+  animation-delay: 20s;
+}
+.slide:nth-child(7) {
+  animation-delay: 24s;
+}
+
+/* Smooth Fade Keyframes */
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  } /* Quick fade-in */
+  15% {
+    opacity: 1;
+  } /* Hold image visible */
+  20% {
+    opacity: 0;
+  } /* Fade-out */
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Welcome Section & Features CSS Grid */
+.welcome-section {
+  padding: 60px 20px;
+  background-color: var(--light-bg);
   text-align: center;
-  color: #c7d1dd;
-  background-color: #e01a4e;
-  border-color: #c7d1dd;
-  border-radius: 5px;
-  width: 150px;
-  border: 2px solid #0038bd;
-  margin-bottom: 175px;
 }
-ul:hover {
-  border: #faf4e4;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-p.c6 {
-  font-size: 15pt;
-  margin-top: 15px;
-  margin-left: 55px;
-  margin-right: 15px;
+
+.welcome-section h3 {
+  color: var(--primary-blue);
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
-footer {
-  color: #0038bd;
-  font-family: "MonaLisa Solid ITC TT";
-  background-color: aqua;
-  border-radius: 15px;
-  width: 750px;
-  padding: 5px;
-  margin-top: 175px;
+
+.welcome-section > .container > p {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  color: #444;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(27, 73, 101, 0.04);
+  border-top: 4px solid var(--light-blue);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.feature-card h4 {
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+/* Quick Info Bar */
+.info-bar {
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 20px;
+}
+
+.info-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-weight: 500;
+}
+
+/* Footer Grid */
+.site-footer {
+  background-color: var(--dark-neutral);
+  color: var(--white);
+  padding: 40px 20px 20px 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  color: var(--accent-sky);
+}
+
+.footer-col a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  font-size: 0.85rem;
+  color: #b0c4de;
 }
